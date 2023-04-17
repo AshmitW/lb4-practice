@@ -1,9 +1,11 @@
 // Uncomment these imports to begin using these cool features!
 
+import {authenticate} from '@loopback/authentication';
 import {get} from '@loopback/rest';
 
 // import {inject} from '@loopback/core';
 
+@authenticate('jwt')
 export class HelloController {
   constructor() {}
 
